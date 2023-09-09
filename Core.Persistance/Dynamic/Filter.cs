@@ -12,7 +12,7 @@ public class Filter
     public string? Value { get; set; } //bunun değeri ne
     public string Operator { get; set; } //sayısal değerler için büyüktür küçüktür gibi
     public string? Logic { get; set; } //birden fazla alan için çalışacağımız için, şu şartı sağlayan ve şu şartı sağlayan gibi. and or
-    public IEnumerable<Filter> Filters { get; set; } //birden fazla filtre koyabiliriz
+    public IEnumerable<Filter>? Filters { get; set; } //birden fazla filtre koyabiliriz
 
     public Filter()
     {
